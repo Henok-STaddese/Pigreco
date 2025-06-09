@@ -1,10 +1,10 @@
-# 🛰️ InaSAFE + QGIS Desktop (via Docker)
+# InaSAFE + QGIS Desktop (via Docker)
 
 This Dockerized environment provides a complete **QGIS Desktop** setup with the **InaSAFE** plugin preinstalled and ready to run directly in your **browser** using a Linux XFCE desktop (via noVNC).
 
 ---
 
-## 📦 What's Included
+##  What's Included
 
 - **Ubuntu 20.04**
 - **QGIS LTR (Long-Term Release)** from the official QGIS repository
@@ -16,7 +16,7 @@ This Dockerized environment provides a complete **QGIS Desktop** setup with the 
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 🔨 Build the Docker Image
 
@@ -26,7 +26,7 @@ docker build -t inasafe-qgis-ltr .
 
 ---
 
-### 🖥️ Run the Container
+###  Run the Container
 
 ```bash
 docker run -it --rm \
@@ -41,7 +41,7 @@ docker run -it --rm \
 
 ---
 
-### 🌐 Access the GUI
+### Access the GUI
 
 Open your browser and visit:
 
@@ -56,7 +56,7 @@ http://localhost:6080
 
 ---
 
-## 📂 Saving and Accessing Files
+##  Saving and Accessing Files
 
 Save and open files in:
 
@@ -68,7 +68,7 @@ Which maps directly to your real Mac desktop (`~/Desktop`), allowing full persis
 
 ---
 
-## 🧱 Project Structure
+##  Project Structure
 
 ```
 inasafe-qgis-docker/
@@ -79,20 +79,9 @@ inasafe-qgis-docker/
 
 ---
 
-## 🛠️ Troubleshooting
 
-- **White screen in browser?**  
-  Make sure `startxfce4` is present in the `~/.vnc/xstartup` file
 
-- **Browser not connecting?**  
-  Ensure Docker is running and you used `--shm-size=2g`
-
-- **Plugin not found?**  
-  Check that `InaSAFE` is correctly installed using the proper case (`InaSAFE`, not `inasafe`)
-
----
-
-## 🙌 Credits
+## Credits
 
 - [QGIS](https://qgis.org/) — Free and Open Source GIS
 - [InaSAFE](https://inasafe.org/) — Disaster risk analysis plugin for QGIS
