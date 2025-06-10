@@ -1,7 +1,7 @@
 ---
 
 use_pycharm: yes
-remote_user: ismailsunni
+remote_user: henok
 remote_group: staff
 project_path: "/Users/henok/Downloads/inasafe-headless-develop"
 
@@ -10,7 +10,6 @@ interpreters:
     name: 'InaSAFE Headless Container'
     domain_alias: 'docker-inasafe-headless'
     ssh_port: &inasafe_headless_ssh_port 35107
-    pycharm_helpers: /root/.pycharm_helpers
     ipaddress: &inasafe_headless_host_ip 192.168.100.4
 
 inasafe:
